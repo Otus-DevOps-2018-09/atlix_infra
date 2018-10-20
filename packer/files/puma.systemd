@@ -1,0 +1,14 @@
+[Unit]
+Description=Puma HTTP Server
+After=network.target
+
+[Service]
+User=appuser
+WorkingDirectory=/home/appuser/reddit
+ExecStart=/usr/local/bin/puma
+PIDFile=/var/run/puma.pid
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+

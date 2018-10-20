@@ -7,9 +7,13 @@
  * [One-line connect](#hw31)  
  * [Alias](#hw32) 
  * [IP info](#hw33)
-#### [Homework 4](#hw4)
+##### [Homework 4](#hw4)
  * [Make an instance](#hw41)  
  * [Adding firewall rule](#hw42)
+#### [Homework 5](#hw5)
+ * [Templates](#hw51)  
+ * [Creating image](#hw52)
+ * [Deploying app](#hw53)
 
 -----------------------------------
 
@@ -62,3 +66,27 @@ gcloud compute --project=infra-219310 firewall-rules create default-puma-server 
 ```
 testapp_IP = 35.241.224.247
 testapp_port = 9292
+
+-----------------------------------
+<a name="hw5"></a>
+## Homework 5 / Packer / 
+<a name="hw51"></a>
+##### Templates
+Созданы шаблоны ubuntu16.json (reddit-base) & immutable.json (reddit-full)
+<a name="hw52"></a>
+##### Creating image
+base:
+```
+cd packer && packer build ubuntu16.json
+```
+full:
+```
+cd packer && packer build -var-file=variables.json immutable.json
+```
+<a name="hw53"></a>
+##### Deploying app
+```
+config-scripts/create-reddit-vm.sh
+```
+
+-----------------------------------
