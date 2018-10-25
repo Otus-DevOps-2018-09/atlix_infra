@@ -10,14 +10,15 @@
 ##### [Homework 4](#hw4)
  * [Make an instance](#hw41)  
  * [Adding firewall rule](#hw42)
-#### [Homework 5](#hw5)
+##### [Homework 5](#hw5)
  * [Templates](#hw51)  
  * [Creating image](#hw52)
  * [Deploying app](#hw53)
-#### [Homework 6](#hw6)
+##### [Homework 6](#hw6)
  * [Main task](#hw61)  
  * [Additional task *](#hw62)
  * [Additional task **](#hw63)
+
 -----------------------------------
 
 <a name="hw3"></a>
@@ -106,3 +107,5 @@ config-scripts/create-reddit-vm.sh
 <a name="hw63"></a>
 ##### Additional task **
 Добавлена конфигурация для деплоя нескольких серверов приложений. Создан lb.tf с примером конфигруации GCP LoadBalancer, позволяющий проксировать трафик на несколько серверов приложений. Проведена проверка, что при отключении приложения на одной VM, не происходит отказа в обслуживании - трафик балансируется на "живой" сервер за счет healthcheck.
+
+
