@@ -10,7 +10,7 @@
 ##### [Homework 4](#hw4)
  * [Make an instance](#hw41)  
  * [Adding firewall rule](#hw42)
-#### [Homework 5](#hw5)
+##### [Homework 5](#hw5)
  * [Templates](#hw51)  
  * [Creating image](#hw52)
  * [Deploying app](#hw53)
@@ -90,3 +90,4 @@ config-scripts/create-reddit-vm.sh
 ```
 
 -----------------------------------
+
