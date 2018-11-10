@@ -124,3 +124,4 @@ config-scripts/create-reddit-vm.sh
 <a name="hw73"></a>
 ##### Additional task **
 - Приложение деплоится на 2 VM (reddit-app и reddit-db)
+- Добавлена параметр app_provision_status для app / db модулей, отвечающий за деплой приложения и настройку mongo
