@@ -19,7 +19,7 @@ variable project {
 
 variable region {
   description = "GCP region"
-  default     = "europe-west"
+  default     = "europe-west3"
 }
 
 variable zone {
