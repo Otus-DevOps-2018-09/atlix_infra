@@ -146,5 +146,5 @@ config-scripts/create-reddit-vm.sh
 - Изменения протестированы на примере создания stage-инфраструктуры
 <a name="hw92"></a>
 ##### Additional task *
-- 
+- Подключен скрипт динамического инвентори gce.py
 
