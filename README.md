@@ -136,3 +136,15 @@ config-scripts/create-reddit-vm.sh
 ##### Additional task *
 - Создан inventory.json и добавлен bash-скрипт inventory.sh для транслирования его ansbile
 
+-----------------------------------
+<a name="hw9"></a>
+## Homework 9 / Ansible-2 / 
+<a name="hw91"></a>
+##### Main task
+- Созданы различные вариации playbook'ов для провижининга и деплоя приложения
+- Изменен способ провижининга образов с shell на ansible в конфигурации packer, собраны новые образы reddit-app-base и reddit-db-base
+- Изменения протестированы на примере создания stage-инфраструктуры
+<a name="hw92"></a>
+##### Additional task *
+- 
+
