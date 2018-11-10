@@ -4,7 +4,7 @@ variable machine_type {
 }
 variable zone {
   description = "GCP zone"
-  default     = "europe-west1-b"
+  default     = "europe-north1-a"
 }
 
 variable public_key_path {
@@ -32,4 +32,8 @@ variable app_proto {
 
 variable reddit_db_addr {
   description = "Mongo DB IP address"
+}
+variable "app_provision_status" {
+  description = "On / off app provisioning"
+  default     = "false"
 }

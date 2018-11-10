@@ -4,7 +4,7 @@ variable machine_type {
 }
 variable zone {
   description = "GCP zone"
-  default     = "europe-west1-b"
+  default     = "europe-north1-b"
 }
 
 variable public_key_path {
@@ -28,4 +28,8 @@ variable db_port {
 variable db_proto {
   description = "Reddit DB protocol"
   default     = "tcp"
+}
+variable "app_provision_status" {
+  description = "On / off app provisioning"
+  default     = "false"
 }
