@@ -1,9 +1,34 @@
 dist: trusty
 sudo: required
 language: bash
+
 before_install:
 - curl https://raw.githubusercontent.com/express42/otus-homeworks/2018-09/run.sh |
   bash
+
+env:
+  matrix:
+    - APPENV=stage
+    - APPENV=prod
+
+brahches:
+  only:
+    - master
+
+install:
+- bash ./play-travis/install_deps.sh
+- touch ~/.ssh/{appuser.pub,appuser}
+
+tests:
+- packer validate -var-file=packer/variables.json.example packer/db.json
+- packer validate -var-file=packer/variables.json.example packer/app.json
+- ansible-lint --exclude=ansible/roles/jdauphant.nginx ansible/playbooks/*
+- cd terraform/${APPENV}
+- terraform init -backend=false
+- mv terraform.tfvars.example terraform.tfvars
+- terraform validate
+- tflint 
+
 notifications:
   slack:
     rooms:

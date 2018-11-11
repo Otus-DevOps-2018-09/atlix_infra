@@ -148,3 +148,15 @@ config-scripts/create-reddit-vm.sh
 ##### Additional task *
 - Подключен скрипт динамического инвентори gce.py
 
+-----------------------------------
+<a name="hw10"></a>
+## Homework 10 / Ansible-3 / 
+<a name="hw101"></a>
+##### Main task
+- Реорганизован каталог ansible
+- Созданы роли app/db
+- Добавлены окружения stage/prod
+<a name="hw102"></a>
+##### Additional task *
+- Динамические инвентори для prod/stage через gce.py
+- Добавлены тесты 
