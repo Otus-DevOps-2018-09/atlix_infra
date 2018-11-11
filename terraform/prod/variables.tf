@@ -1,18 +1,7 @@
-variable app_name {
-  description = "Reddit app name"
-  default     = "reddit-app"
+variable vm_type {
+  description = "VM type"
+  default     = "g1-small"
 }
-
-variable app_port {
-  description = "Reddit app port"
-  default     = 9292
-}
-
-variable app_proto {
-  description = "Reddit app protocol"
-  default     = "tcp"
-}
-
 variable project {
   description = "GCP project ID"
 }
@@ -35,11 +24,13 @@ variable private_key_path {
   description = "Path to the private key used for ssh access"
 }
 
-variable disk_image {
-  description = "Disk image"
+variable db_disk_image {
+  description = "DB disk image"
 }
-
-variable count {
-  description = "Instance count"
-  default     = 1
+variable app_disk_image {
+  description = "App disk image"
+}
+variable "app_provision_status" {
+  description = "On / off app provisioning"
+  default     = "false"
 }
