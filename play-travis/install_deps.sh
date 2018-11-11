@@ -3,7 +3,8 @@
 set -e
 
 echo "### Installing dependencies for tests ###"
-sudo pip -q install ansible-lint==3.5.1
+pip -q install --upgrade pip
+pip -q install ansible-lint==3.5.1
 
 cd /tmp
 
