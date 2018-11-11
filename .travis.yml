@@ -19,7 +19,7 @@ install:
 - bash ./play-travis/install_deps.sh
 - touch ~/.ssh/{appuser.pub,appuser}
 
-tests:
+script:
 - packer validate -var-file=packer/variables.json.example packer/db.json
 - packer validate -var-file=packer/variables.json.example packer/app.json
 - ansible-lint --exclude=ansible/roles/jdauphant.nginx ansible/playbooks/*
