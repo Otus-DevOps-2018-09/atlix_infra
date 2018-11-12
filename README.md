@@ -124,4 +124,15 @@ config-scripts/create-reddit-vm.sh
 <a name="hw73"></a>
 ##### Additional task **
 - Приложение деплоится на 2 VM (reddit-app и reddit-db)
-- Добавлена параметр app_provision_status для app / db модулей, отвечающий за деплой приложения и настройку mongo
+
+-----------------------------------
+<a name="hw8"></a>
+## Homework 8 / Ansible-1 / 
+<a name="hw81"></a>
+##### Main task
+- Установлен Ansible
+- Создана директория ansible, добавлены файлы конфигурации и inventory-файлы
+<a name="hw72"></a>
+##### Additional task *
+- Создан inventory.json и добавлен bash-скрипт inventory.sh для транслирования его ansbile
+

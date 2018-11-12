@@ -1,3 +1,7 @@
+variable project {
+  description = "GCP project ID"
+}
+
 variable app_name {
   description = "Reddit app name"
   default     = "reddit-app"
@@ -11,10 +15,6 @@ variable app_port {
 variable app_proto {
   description = "Reddit app protocol"
   default     = "tcp"
-}
-
-variable project {
-  description = "GCP project ID"
 }
 
 variable region {
