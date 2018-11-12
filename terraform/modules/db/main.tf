@@ -18,6 +18,9 @@ resource "google_compute_instance" "db" {
   metadata {
     ssh-keys = "appuser:${file(var.public_key_path)}"
   }
+}
+resource "null_resource" "db" {
+  count = "${var.app_provision_status ? 1 : 0}"
 
   connection {
     type        = "ssh"

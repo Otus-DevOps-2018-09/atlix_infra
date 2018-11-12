@@ -31,3 +31,7 @@ variable app_disk_image {
   description = "App disk image"
 }
 
+variable "app_provision_status" {
+  description = "On / off app provisioning"
+  default     = "false"
+}

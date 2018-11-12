@@ -8,12 +8,12 @@ variable project {
 
 variable region {
   description = "GCP region"
-  default     = "europe-west1"
+  default     = "europe-north1"
 }
 
 variable zone {
   description = "GCP zone"
-  default     = "europe-west1-b"
+  default     = "europe-north1-b"
 }
 
 variable public_key_path {
@@ -31,3 +31,7 @@ variable app_disk_image {
   description = "App disk image"
 }
 
+variable "app_provision_status" {
+  description = "On / off app provisioning"
+  default     = "false"
+}

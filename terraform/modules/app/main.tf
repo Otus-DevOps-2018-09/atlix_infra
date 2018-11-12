@@ -29,6 +29,9 @@ resource "google_compute_instance" "app" {
       nat_ip = "${google_compute_address.app_ip.address}"
     }
   }
+}
+resource "null_resource" "app" {
+  count = "${var.app_provision_status ? 1 : 0}"
 
   connection {
     type        = "ssh"
@@ -45,6 +48,7 @@ resource "google_compute_instance" "app" {
     script = "${path.module}/files/deploy.sh"
   }
 }
+
 resource "google_compute_firewall" "firewall_puma" {
   name    = "allow-puma-default"
   network = "default"
