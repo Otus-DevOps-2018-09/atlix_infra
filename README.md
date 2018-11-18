@@ -160,3 +160,15 @@ config-scripts/create-reddit-vm.sh
 ##### Additional task *
 - Динамические инвентори для prod/stage через gce.py
 - Добавлены тесты 
+
+-----------------------------------
+<a name="hw11"></a>
+## Homework 11 / Ansible-4 / 
+<a name="hw111"></a>
+##### Main task
+- Установлены Vagrant, Virtualbox, Molecule
+- Изменена конфигурация ролей; роли добавлены в плейбуки
+- Добавлен тест для mongo
+<a name="hw112"></a>
+##### Additional task *
+- Настройка Nginx через Vargant
