@@ -25,6 +25,11 @@ variable app_port {
   default     = 9292
 }
 
+variable nginx_port {
+  description = "Reddit app nginx port"
+  default     = 80
+}
+
 variable app_proto {
   description = "Reddit app protocol"
   default     = "tcp"

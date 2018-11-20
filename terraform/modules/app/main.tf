@@ -55,7 +55,8 @@ resource "google_compute_firewall" "firewall_puma" {
 
   allow {
     protocol = "${var.app_proto}"
-    ports    = ["${var.app_port}"]
+    ports    = ["${var.app_port}","${var.nginx_port}"]
+
   }
 
   source_ranges = ["0.0.0.0/0"]

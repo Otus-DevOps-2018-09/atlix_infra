@@ -13,7 +13,7 @@ variable region {
 
 variable zone {
   description = "GCP zone"
-  default     = "europe-north1-b"
+  default     = "europe-north1-c"
 }
 
 variable public_key_path {
