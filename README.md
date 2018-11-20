@@ -132,7 +132,7 @@ config-scripts/create-reddit-vm.sh
 ##### Main task
 - Установлен Ansible
 - Создана директория ansible, добавлены файлы конфигурации и inventory-файлы
-<a name="hw72"></a>
+<a name="hw82"></a>
 ##### Additional task *
 - Создан inventory.json и добавлен bash-скрипт inventory.sh для транслирования его ansbile
 
@@ -147,4 +147,5 @@ config-scripts/create-reddit-vm.sh
 <a name="hw92"></a>
 ##### Additional task *
 - Подключен скрипт динамического инвентори gce.py
+
 
