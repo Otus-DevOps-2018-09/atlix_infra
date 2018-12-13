@@ -27,6 +27,7 @@ variable private_key_path {
 variable db_disk_image {
   description = "DB disk image"
 }
+
 variable app_disk_image {
   description = "App disk image"
 }
@@ -35,4 +36,3 @@ variable "app_provision_status" {
   description = "On / off app provisioning"
   default     = "false"
 }
-
