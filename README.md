@@ -18,7 +18,22 @@
  * [Main task](#hw61)  
  * [Additional task *](#hw62)
  * [Additional task **](#hw63)
-
+##### [Homework 7](#hw7)
+ * [Main task](#hw71)  
+ * [Additional task *](#hw72)
+ * [Additional task **](#hw73)
+##### [Homework 8](#hw8)
+ * [Main task](#hw81)  
+ * [Additional task *](#hw82)
+##### [Homework 9](#hw9)
+ * [Main task](#hw91)  
+ * [Additional task *](#hw92)
+##### [Homework 10](#hw10)
+ * [Main task](#hw101)  
+ * [Additional task *](#hw102)
+##### [Homework 11](#hw11)
+ * [Main task](#hw111)  
+ * [Additional task *](#hw112)
 -----------------------------------
 
 <a name="hw3"></a>
@@ -172,3 +187,4 @@ config-scripts/create-reddit-vm.sh
 <a name="hw112"></a>
 ##### Additional task *
 - Настройка Nginx через Vargant
+
